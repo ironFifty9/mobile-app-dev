@@ -5,7 +5,7 @@ import {
   TextInput,
   TouchableOpacity,
   FlatList,
-  StyleSheet,
+  
 } from "react-native";
 
 // Main TodoApp component
@@ -13,14 +13,13 @@ const TodoApp = () => {
   // State to store the list of tasks
   const [tasks, setTasks] = useState([
     // { id: "1", 
-    //   text: "Send a compliment to someone 👍", 
+    //   text: "Send a compliment to someone", 
     //   completed: false },
-    // {
-    //   id: "2",
-    //   text: "Give a shout-out to felix, callista and chineye 📢",
+    // { id: "2",
+    //   text: "Give a shout-out to felix, callista and chineye",
     //   completed: false,},
     // { id: "3", 
-    //   text: "Cook indomie 😋", 
+    //   text: "Cook indomie", 
     //   completed: false },
   ]);
 
@@ -95,7 +94,7 @@ const TodoApp = () => {
 };
 
 // Styles for the app
-const styles = StyleSheet.create({
+const styles = ({
   container: {
     flex: 1,
     backgroundColor: "#F5F5F5",
